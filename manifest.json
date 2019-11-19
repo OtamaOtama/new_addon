@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Chaos",
+  "version": "1.0",
+  "description": "Enlarge 'next' link in Google search result.",
+  "homepage_url": "https://github.com/dadaa/3BaiNext",
+  "author": "Ryo Kodama",
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.co.jp/search*",
+                  "*://www.google.com/search*"],
+      "js": ["main.js"]
+    }
+  ]
+}
